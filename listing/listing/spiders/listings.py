@@ -15,6 +15,7 @@ def get_df(path):
     return df
 
 
+
 class ListingsSpider(scrapy.Spider):
     name = 'listings'
     allowed_domains = ['www.aston.ac.uk']

@@ -16,6 +16,7 @@ class CourseSpider(scrapy.Spider):
             meta['name']=name
             yield scrapy.Request(absolute_url,callback=self.course_details,meta={'course_name':name})
             
+            
     def course_details(self,response):
 
         name=response.request.meta['course_name']
